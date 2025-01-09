@@ -1,0 +1,104 @@
+/* Sidebar.css */
+.sidebar {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+    border-right: 1px solid #eee; /* Optional border */
+    font-family: sans-serif; /* Example font */
+  }
+  
+  .progress-bar {
+      margin-bottom: 20px;
+  }
+  
+  
+  .progress-bar-indicator {
+      width: 100%;
+      height: 8px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-top: 5px; /* Spacing between text and bar */
+  }
+  
+  
+  .table-of-contents {
+    margin-bottom: 20px;
+  }
+  
+  .table-of-contents h2 {
+    margin-bottom: 10px;
+  }
+  
+  .expand-all-link {
+      float: right;
+      font-size: 0.9em;
+      color: #007bff; /* Example link color */
+      text-decoration: none;
+  }
+  .expand-all-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .rating-box {
+      background-color: #fff; /* White background for rating box */
+      border: 1px solid #eee;
+      padding: 10px;
+      margin-top: 10px;
+  }
+  .star-rating {
+      font-size: 1.2em; /* Adjust size as needed */
+      margin-bottom: 5px; /* Spacing between star rating and numbers */
+  }
+  .star {
+      color: orange; /* Example color for filled stars */
+      display: inline-block;
+      text-shadow: 0 0 2px #f0ad4e;
+      &:before {
+          content: '\2605';
+      }
+  
+  }
+  .star-empty {
+      display: inline-block;
+      color: #aaa;
+      &:before {
+        content: '\2606';
+      }
+  }
+  
+  .more-link {
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  .more-link:hover {
+      text-decoration: underline;
+  }
+  
+  .review-link {
+      display: block;
+      margin-top: 5px;
+      color: #007bff; /* Link color */
+      text-decoration: none;
+  }
+  .review-link:hover {
+    text-decoration: underline;
+  }
+  
+  .administration {
+      background-color: #fff;
+      border: 1px solid #eee;
+      padding: 10px;
+  }
+  .administration h2 {
+      margin-bottom: 10px; /* Add margin to admin title */
+  }
+  .admin-items label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .admin-items input[type="checkbox"] {
+      margin-right: 5px; /* Add spacing between checkbox and label */
+  }
