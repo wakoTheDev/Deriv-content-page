@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LandingPage from './home';
 import './App.css';
 import MyHeader from './customHeader';
 import MyFooter from './Footer';
@@ -9,6 +10,11 @@ import More from './More';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showLandingPage, setShowLandingPage] = useState(true);
+
+  const handleStartLearning = () => {
+    setShowLandingPage(false);
+  };
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -20,12 +26,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="socials">
-        <div className="appSocials"></div>
-        <div className="appSocials"></div>
-        <div className="appSocials"></div>
-      </div>
-      <MyHeader />
+      {showLandingPage ? (<LandingPage onStartLearning={handleStartLearning} />):
+      (
+        <><div className="socials">
+            <div className="appSocials"></div>
+            <div className="appSocials"></div>
+            <div className="appSocials"></div>
+          </div><MyHeader />
       
       {/* Pass handleOpenModal to FloatingButtons */}
       <FloatingButtons onCourseClick={handleOpenModal} />
@@ -81,7 +88,9 @@ function App() {
             </button>
           </div>
         </div>
+      )}</>
       )}
+      
     </div>
   );
 }

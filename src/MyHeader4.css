@@ -1,0 +1,78 @@
+.analysis-tool {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    display: inline-block;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #a00000;
+    padding: 10px;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 5px;
+  }
+  
+  .banner {
+    background-color: #a00000;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 0;
+  }
+@media (max-width:600px) {
+  .logo img{
+    width: 25px;
+  } 
+  .logo{
+    font-size: 0.5em;
+  } 
+}
+@media (min-width:600px) and (max-width:900px) {
+  .logo img{
+    width: 50px;
+  } 
+  .logo{
+    font-size: 0.7em;
+  } 
+}

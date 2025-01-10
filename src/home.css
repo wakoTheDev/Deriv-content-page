@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    margin-top:90px ;
+    font-family: Arial, sans-serif;
+  }
+  
+  .online-academy {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .header-icons span {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .content {
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  /* Buttons Section */
+  .button-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .start-learning {
+    background-color: #b90000;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49%;
+  }
+  
+  .start-learning:hover {
+    background-color: #a30000;
+  }
+  
+  .open-account {
+    background-color: white;
+    color: #b90000;
+    border: 2px solid #b90000;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49%;
+    display: inline-block;
+  }
+  
+  .open-account:hover {
+    background-color: #b90000;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width : 768px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+
+    .button-container{
+      display: flex;
+    }
+  
+    .start-learning,
+    .open-account {
+      padding: 10px;
+      font-size: 0.9rem;
+      width: 49%;
+    }
+  }
+  
+  @media (max-width < 768px) {
+    .title {
+      font-size: 1.3rem;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+    }
+    .button-container{
+      flex-direction: column;
+    }
+    .start-learning,
+    .open-account {
+      padding: 8px;
+      font-size: 0.8rem;
+      display: block;
+      width:100%;
+    }
+  }
+  
