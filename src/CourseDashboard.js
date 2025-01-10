@@ -22,8 +22,8 @@ const CourseDashboard = () => {
                         <button className="activity-button">Activities</button>
                     </div>
                     <div className="teacher-info">
-                        <div className="teacher-avatar">LK</div>
-                        <p><strong>Teacher:</strong> Leon Kimani</p>
+                        <div className="teacher-avatar">D</div>
+                        <p><strong>Teacher:</strong> Daniel</p>
                     </div>
                 </div>
 
