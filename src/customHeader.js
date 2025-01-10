@@ -11,7 +11,7 @@ const MyHeader = () => {
           BINARY TOOL
         </div>
         <div className="menu">
-          <span className="menu-item">My courses <span className="badge"></span></span>
+          <span className="menu-item">My courses </span>
           <span className="menu-item">Search</span>
         </div>
       </header>
