@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css"; 
 import MyHeader from "./homeheader";
-import BackgroundImage  from "./binaryimage.jpg";
+import BackgroundImage  from "./binarytoolimage.jpg";
 
 const LandingPage = ({ onStartLearning }) => {
   return (
@@ -30,7 +30,7 @@ const LandingPage = ({ onStartLearning }) => {
         </div>
 
         <div className="image">
-        <img src={BackgroundImage}  alt={""} width={"100%"} height={"100%"} style={{objectFit:"fill"}} />
+        <img src={BackgroundImage}  alt={""} width={"100%"} height={"80%"} style={{objectFit:"cover"}} />
         </div>
       </main>
     </div>
