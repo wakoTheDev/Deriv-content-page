@@ -30,7 +30,7 @@ const LandingPage = ({ onStartLearning }) => {
         </div>
 
         <div className="image">
-        <img src={BackgroundImage}  alt={""} width={"100%"} height={"80%"} style={{objectFit:"cover"}} />
+        <img src={BackgroundImage}  alt={""} width={"100%"} height={"80%"} style={{objectFit:"fill"}} />
         </div>
       </main>
     </div>
